@@ -7,7 +7,8 @@ param(
     [string] $TargetPassword = $env:sa_password
 )
 
-if ($TargetDatabaseName -eq '.\SQLEXPRESS') {
+#if ($TargetDatabaseName -eq '.\SQLEXPRESS') {
+if ($TargetServerName -eq '.\SQLEXPRESS') {
 
     # start the service
     Write-Verbose 'Starting SQL Server'
